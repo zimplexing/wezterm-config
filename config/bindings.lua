@@ -61,8 +61,10 @@ local keys = {
 
    -- tabs --
    -- tabs: spawn+close
-   { key = 'n',          mods = mod.SUPER, action = act.SpawnTab({ DomainName = 'WSL:Ubuntu-24.04' }) },
-   { key = 'n',          mods = mod.SUPER_REV, action = act.SpawnTab('DefaultDomain') },
+   { key = 'n',          mods = mod.SUPER_REV, action = act.SpawnCommandInNewTab{
+      args = { 'pwsh', '-NoLogo' },
+   }},
+   { key = 'n',          mods = mod.SUPER, action = act.SpawnTab('DefaultDomain') },
    { key = 'w',          mods = mod.SUPER_REV, action = act.CloseCurrentTab({ confirm = false }) },
 
    -- tabs: navigation
