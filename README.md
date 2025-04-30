@@ -198,10 +198,10 @@
 
   1.  ```sh
       # Unix systems
-      git clone https://github.com/KevinSilvester/wezterm-config.git ~/.config/wezterm
+      git clone https://github.com/zimplexing/wezterm-config.git ~/.config/wezterm
 
       # On Windows
-      git clone https://github.com/KevinSilvester/wezterm-config.git .config/wezterm
+      git clone https://github.com/zimplexing/wezterm-config.git .config/wezterm
       ```
   2.  And Done!!! 🎉🎉
 
