@@ -18,11 +18,13 @@ return {
    -- ref: https://wezfurlong.org/wezterm/config/lua/WslDomain.html
    wsl_domains = {
       {
-         name = 'WSL:Ubuntu',
+         -- tab display name = 'WSL:Ubuntu-24.04',
+         name = 'WSL:Ubuntu-24.04',
+         -- get wsl distribution name with: wsl -l -v
          distribution = 'Ubuntu',
-         username = 'kevin',
-         default_cwd = '/home/kevin',
-         default_prog = { 'fish', '-l' },
+         username = 'neilxzhang',
+         default_cwd = '/home/neilxzhang',
+         -- default_prog = { 'fish', '-l' },
       },
    },
 }
