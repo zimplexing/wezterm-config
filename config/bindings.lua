@@ -54,13 +54,15 @@ local keys = {
    { key = 'Backspace',  mods = mod.SUPER,     action = act.SendString '\u{15}' },
 
    -- copy/paste --
+   -- { key = 'c',          mods = 'CTRL',  action = act.CopyTo('Clipboard') },
+   { key = 'v',          mods = 'CTRL',  action = act.PasteFrom('Clipboard') },
    { key = 'c',          mods = 'CTRL|SHIFT',  action = act.CopyTo('Clipboard') },
-   { key = 'v',          mods = 'CTRL|SHIFT',  action = act.PasteFrom('Clipboard') },
+   -- { key = 'v',          mods = 'CTRL|SHIFT',  action = act.PasteFrom('Clipboard') },
 
    -- tabs --
    -- tabs: spawn+close
-   { key = 't',          mods = mod.SUPER,     action = act.SpawnTab('DefaultDomain') },
-   { key = 't',          mods = mod.SUPER_REV, action = act.SpawnTab({ DomainName = 'WSL:Ubuntu' }) },
+   { key = 'n',          mods = mod.SUPER, action = act.SpawnTab({ DomainName = 'WSL:Ubuntu-24.04' }) },
+   { key = 'n',          mods = mod.SUPER_REV, action = act.SpawnTab('DefaultDomain') },
    { key = 'w',          mods = mod.SUPER_REV, action = act.CloseCurrentTab({ confirm = false }) },
 
    -- tabs: navigation
@@ -78,7 +80,7 @@ local keys = {
 
    -- window --
    -- window: spawn windows
-   { key = 'n',          mods = mod.SUPER,     action = act.SpawnWindow },
+   -- { key = 'n',          mods = mod.SUPER,     action = act.SpawnWindow },
 
    -- window: zoom window
    {
